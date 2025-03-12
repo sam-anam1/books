@@ -109,23 +109,7 @@
 
     <!-- Report Issue and DB Switcher -->
     <div class="window-no-drag flex flex-col gap-2 py-2 px-4">
-      <button
-        class="
-          flex
-          text-sm text-gray-600
-          dark:text-gray-500
-          hover:text-gray-800
-          dark:hover:text-gray-400
-          gap-1
-          items-center
-        "
-        @click="openDocumentation"
-      >
-        <feather-icon name="help-circle" class="h-4 w-4 flex-shrink-0" />
-        <p>
-          {{ t`Help` }}
-        </p>
-      </button>
+      <!-- by sam -->
 
       <button
         class="
@@ -160,23 +144,7 @@
         <p>{{ t`Change DB` }}</p>
       </button>
 
-      <button
-        class="
-          flex
-          text-sm text-gray-600
-          dark:text-gray-500
-          hover:text-gray-800
-          dark:hover:text-gray-400
-          gap-1
-          items-center
-        "
-        @click="() => reportIssue()"
-      >
-        <feather-icon name="flag" class="h-4 w-4 flex-shrink-0" />
-        <p>
-          {{ t`Report Issue` }}
-        </p>
-      </button>
+     <!--  by sam -->
 
       <p
         v-if="showDevMode"
@@ -292,7 +260,7 @@ export default defineComponent({
     reportIssue,
     toggleSidebar,
     openDocumentation() {
-      ipc.openLink('https://docs.frappe.io/' + docsPathRef.value);
+      ipc.openLink('https://www.sams-tech.net/' + docsPathRef.value);
     },
     setActiveGroup() {
       const { fullPath } = this.$router.currentRoute.value;

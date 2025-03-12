@@ -12,7 +12,7 @@
         class="w-full h-full p-2 mt-2"
         :class="{ 'dark:bg-gray-890 underline': savedInvoiceList }"
         @click="savedInvoiceList = true"
-        >Saved</Button
+        >{{ t`Saved` }}</Button
       >
 
       <Button
@@ -20,7 +20,7 @@
         class="w-full h-full p-2 mt-2"
         :class="{ 'dark:bg-gray-890 underline': !savedInvoiceList }"
         @click="savedInvoiceList = false"
-        >Submitted</Button
+        >{{ t`Submitted` }}</Button
       >
     </div>
     <Row
@@ -108,6 +108,7 @@ import { defineComponent, inject } from 'vue';
 import { ModelNameEnum } from 'models/types';
 import { Field } from 'schemas/types';
 import { Money } from 'pesa';
+import { t } from 'fyo/utils/translation';
 
 export default defineComponent({
   name: 'SavedInvoiceModal',
@@ -141,7 +142,7 @@ export default defineComponent({
       return [
         {
           fieldname: 'name',
-          label: 'Name',
+          label: t`Name`,
           fieldtype: 'Link',
           target: 'SalesInvoice',
           readOnly: true,
@@ -149,20 +150,20 @@ export default defineComponent({
         {
           fieldname: 'party',
           fieldtype: 'Link',
-          label: 'Customer',
+          label: t`Customer`,
           target: 'Party',
           placeholder: 'Customer',
           readOnly: true,
         },
         {
           fieldname: 'date',
-          label: 'Date',
+          label: t`Date`,
           fieldtype: 'Date',
           readOnly: true,
         },
         {
           fieldname: 'grandTotal',
-          label: 'Grand Total',
+          label: t`Grand Total`,
           fieldtype: 'Currency',
           readOnly: true,
         },

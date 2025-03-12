@@ -27,7 +27,7 @@
         dark:bg-gray-800 dark:text-white
       "
     >
-      {{ tableView ? 'Grid View' : 'List View' }}
+      {{ tableView ? t`Grid View` : t`List View` }}
     </span>
   </div>
 
@@ -69,7 +69,7 @@
         dark:bg-gray-800 dark:text-white
       "
     >
-      Sales Invoice List
+      {{ t`Sales Invoice List` }}
     </span>
   </div>
 
@@ -126,7 +126,7 @@
         dark:bg-gray-800 dark:text-white
       "
     >
-      Loyalty Program
+      {{ t`Loyalty Program` }}
     </span>
   </div>
 
@@ -220,7 +220,7 @@
         dark:bg-gray-800 dark:text-white
       "
     >
-      Coupon Code
+      {{ t`Coupon Code` }}
     </span>
     <div
       v-if="appliedCouponsCount !== 0"
@@ -293,7 +293,7 @@
         duration-300
       "
     >
-      Price List
+      {{ t`Price List` }}
     </span>
   </div>
 </template>

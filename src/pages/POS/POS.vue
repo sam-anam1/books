@@ -438,7 +438,7 @@ export default defineComponent({
     },
     setSinvDoc() {
       this.sinvDoc = this.fyo.doc.getNewDoc(ModelNameEnum.SalesInvoice, {
-        account: 'Debtors',
+    //    account: 'Debtors',
         party: this.sinvDoc.party ?? this.defaultCustomer,
         isPOS: true,
       }) as SalesInvoice;

@@ -46,13 +46,13 @@ export default function registerAutoUpdaterListeners(main: Main) {
 
     await autoUpdater.downloadUpdate();
   });
-
+/**
   // eslint-disable-next-line @typescript-eslint/no-misused-promises
   autoUpdater.on('update-downloaded', async () => {
     const option = await dialog.showMessageBox({
       type: 'info',
       title: 'Update Downloaded',
-      message: 'Restart Frappe Books to install update?',
+      message: 'Restart Accounting Program to install update?',
       buttons: ['Yes', 'No'],
     });
 
@@ -62,4 +62,5 @@ export default function registerAutoUpdaterListeners(main: Main) {
 
     autoUpdater.quitAndInstall();
   });
+    */
 }

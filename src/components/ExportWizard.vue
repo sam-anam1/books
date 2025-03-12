@@ -169,7 +169,7 @@ export default defineComponent({
           fieldname: 'useListFilters',
         } as Field,
         limit: {
-          placeholder: 'Limit number of rows',
+          placeholder: t`Limit number of rows`,
           fieldtype: 'Int',
           label: t`Limit`,
           fieldname: 'limit',

@@ -1,4 +1,4 @@
-productName: Frappe Books
+productName: Accounting
 appId: io.frappe.books
 asarUnpack: '**/*.node'
 extraResources:
@@ -19,13 +19,13 @@ mac:
   entitlements: build/entitlements.mac.plist
   entitlementsInherit: build/entitlements.mac.plist
   publish:
-    - github
+    - samstech
 win:
-  publisherName: Frappe Technologies Pvt. Ltd.
+  publisherName: Sams Tech LLC.
   signDlls: true
   icon: build/icon.ico
   publish:
-    - github
+    - samstech
   target:
     - portable
     - nsis
@@ -36,12 +36,12 @@ nsis:
   installerIcon: build/installericon.ico
   uninstallerIcon: build/uninstallericon.ico
   publish:
-    - github
+    - samstech
 linux:
   icon: build/icons
   category: Finance
   publish:
-    - github
+    - samstech
   target:
     - deb
     - AppImage

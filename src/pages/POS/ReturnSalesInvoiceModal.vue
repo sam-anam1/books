@@ -89,6 +89,7 @@ import { SalesInvoice } from 'models/baseModels/SalesInvoice/SalesInvoice';
 import { defineComponent, inject } from 'vue';
 import { ModelNameEnum } from 'models/types';
 import { Field } from 'schemas/types';
+import { t } from 'fyo';
 
 export default defineComponent({
   name: 'ReturnSalesInvoice',
@@ -120,28 +121,28 @@ export default defineComponent({
       return [
         {
           fieldname: 'name',
-          label: 'Name',
+          label: t`Name`,
           fieldtype: 'Link',
           target: 'SalesInvoice',
           readOnly: true,
         },
         {
           fieldname: 'party',
-          fieldtype: 'Link',
-          label: 'Customer',
+          fieldtype: t`Link`,
+          label: t`Customer`,
           target: 'Party',
           placeholder: 'Customer',
           readOnly: true,
         },
         {
           fieldname: 'date',
-          label: 'Date',
+          label: t`Date`,
           fieldtype: 'Date',
           readOnly: true,
         },
         {
           fieldname: 'grandTotal',
-          label: 'Grand Total',
+          label: t`Grand Total`,
           fieldtype: 'Currency',
           readOnly: true,
         },

@@ -109,14 +109,14 @@ export default defineComponent({
         {
           fieldname: 'item',
           fieldtype: 'Link',
-          label: 'Item',
+          label: 'العنصر',
           placeholder: 'Item',
           required: true,
           schemaName: 'Item',
         },
         {
           fieldname: 'quantity',
-          label: 'Quantity',
+          label: 'كمية',
           placeholder: 'Quantity',
           fieldtype: 'Int',
           required: true,
@@ -124,7 +124,7 @@ export default defineComponent({
         },
         {
           fieldname: 'unit',
-          label: 'Stock Unit',
+          label: 'وحدة المخزون',
           placeholder: 'Unit',
           fieldtype: 'Link',
           required: true,
@@ -132,7 +132,7 @@ export default defineComponent({
         },
         {
           fieldname: 'rate',
-          label: 'Rate',
+          label: 'السعر',
           placeholder: 'Rate',
           fieldtype: 'Currency',
           required: true,
@@ -140,7 +140,7 @@ export default defineComponent({
         },
         {
           fieldname: 'amount',
-          label: 'Amount',
+          label: 'المبلغ',
           placeholder: 'Amount',
           fieldtype: 'Currency',
           required: true,

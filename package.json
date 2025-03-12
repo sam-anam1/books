@@ -1,10 +1,10 @@
 {
-  "name": "frappe-books",
+  "name": "accounting",
   "version": "0.27.0",
-  "description": "Simple book-keeping app for everyone",
+  "description": "Accounting book-keeping app",
   "author": {
-    "name": "Frappe Technologies Pvt. Ltd.",
-    "email": "hello@frappe.io"
+    "name": "SamsTech LLC.",
+    "email": "hello@samstech.net"
   },
   "scripts": {
     "dev": "node build/scripts/dev.mjs",

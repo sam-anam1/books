@@ -15,7 +15,7 @@ const buildDirPath = path.join(root, 'dist_electron', 'build');
 const packageDirPath = path.join(root, 'dist_electron', 'bundled');
 
 const frappeBooksConfig = {
-  productName: 'Frappe Books',
+  productName: 'Accounting',
   appId: 'io.frappe.books',
   asarUnpack: '**/*.node',
   extraResources: [
@@ -44,7 +44,7 @@ const frappeBooksConfig = {
     publish: ['github'],
   },
   win: {
-    publisherName: 'Frappe Technologies Pvt. Ltd.',
+    publisherName: 'SamsTech LLC.',
     signDlls: true,
     icon: 'build/icon.ico',
     publish: ['github'],
